@@ -40,18 +40,18 @@ function readValue() {
   }
   //c^2-b^2=sqrt(a) //här är du atm
   function acquireValue() {
-    var c_str = document.getElementById("a").value;
-    var c = parseInt(a_str);
-    var b_str = document.getElementById("b").value;
-    var b = parseInt(b_str);
+    var c_str = document.getElementById("c").value;
+    var c = parseInt(c_str);
+    var b2_str = document.getElementById("b2").value;
+    var b2 = parseInt(b2_str);
     
     
-    compute(a, b);
+    compute2(c, b2);
   }
   
-  function compute(a, b) {
+  function compute2(c, b2) {
     //Genomför beräkningen
-     var pyth1 = Math.pow(a, 2) + Math.pow(b, 2);
-     var svar1 = Math.sqrt(pyth1);
-     document.getElementById("svar1").innerHTML = "Svar: C = " + svar1;
+     var pyth2 = Math.pow(c, 2) - Math.pow(b2, 2);
+     var svar2 = Math.sqrt(pyth2);
+     document.getElementById("svar2").innerHTML = "Svar: A = " + svar2;
   }
