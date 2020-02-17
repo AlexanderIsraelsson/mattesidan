@@ -26,4 +26,21 @@ function calculate(p, q) {
      return "Svar: A = " + svar2;
   }
 
-module.exports = { sum, calculate, compute, compute2 };
+  function compute3(c2, a2) {
+    //Genomför beräkningen
+     var pyth3 = Math.pow(c2, 2) - Math.pow(a2, 2);
+     var svar3 = Math.sqrt(pyth3);
+     return "Svar: B = " + svar3;
+  }
+
+//   function determine(x1, x2, y1, y2) {
+//     //Genomför beräkningen
+//      var k1 = (y2) - (y1);
+//      var k2 = (x2) - (x1);
+//      var answrK = (k1) / (k2);
+//      var answrM = 
+//      return "Svar: K = " + answrK;
+//      return "Svar: M = " + answrM
+//   }
+
+module.exports = { sum, calculate, compute, compute2, compute3 };
